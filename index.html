@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דרוש/ה רכז/ת פדגוגי/ת - הצטרפו אלינו!</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+        
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Base styles for all animated elements. They start invisible and shifted. */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .animate-on-scroll.fade-in {
+            transform: translateY(30px);
+        }
+
+        .animate-on-scroll.slide-in-right {
+            transform: translateX(50px);
+        }
+
+        .animate-on-scroll.slide-in-left {
+            transform: translateX(-50px);
+        }
+
+        /* The 'visible' class triggers the animation, making them appear. */
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 pt-20">
+    <!-- Fixed Header with Logo -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-center">
+                <a href="https://yuni.co.il" target="_blank" class="hover:opacity-80 transition-opacity flex items-center gap-1 md:gap-2">
+                    <img src="https://media.canva.com/v2/image-resize/format:PNG/height:83/quality:100/uri:ifs%3A%2F%2FM%2FpFMJwSzYqQ4X60PkYee2HLO6W6UyBImHz8uH-Nfb018.png/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAAIH1JQHE3Q95QfYuJ_4jv0YtHIJdmaovyXmwABJcKwbW&exp=1753573227&osig=AAAAAAAAAAAAAAAAAAAAAEXs3-CYR22EtOMC9JckwGtiye8V_ibr8nsOQu0aZRB1&signer=media-rpc&x-canva-quality=thumbnail_large" alt="YUNI" class="h-8 md:h-12" width="318" height="48" loading="lazy">
+                    <img src="https://media.canva.com/v2/image-resize/format:PNG/height:154/quality:100/uri:ifs%3A%2F%2FM%2F4e036cdb-4b22-4fc9-8208-68b9623e1f96/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAADKYKXfwd9AgDJ03-vnxpCmbQ2BjhtQUQU8ctahWf2XU&exp=1753572017&osig=AAAAAAAAAAAAAAAAAAAAAFpMagy8oQyqmCpOkEd-HlP7LQ-Du5cTDhLBEDWK4DTr&signer=media-rpc&x-canva-quality=thumbnail_large" alt="YUNI" class="h-8 md:h-12" width="171" height="48" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-16 md:py-32">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="animate-on-scroll fade-in text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800 mb-4 leading-tight">
+                    דרוש/ה רכז/ת פדגוגי/ת
+                </h1>
+                <p class="animate-on-scroll fade-in text-lg sm:text-xl md:text-2xl lg:text-3xl text-purple-600 mb-8 md:mb-12 font-medium" style="transition-delay: 150ms;">
+                    בואו להדליק את הניצוץ המתמטי בלב של בנות ובני נוער!
+                </p>
+                
+                <div class="animate-on-scroll fade-in bg-white rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg text-right text-base md:text-lg text-gray-700 leading-relaxed space-y-4 md:space-y-6 mb-8 md:mb-12" style="transition-delay: 300ms;">
+                     <p>
+                         <strong class="text-lg md:text-xl text-purple-700">אוהב/ת מתמטיקה?</strong><br>
+                         לא את זו של הנוסחאות והמבחנים, אלא את המתמטיקה היפה, המפתיעה, זו שמסתתרת בחידות, במשחקים ובעולמות שלא פוגשים בבית הספר?
+                     </p>
+                     <hr>
+                     <p>
+                         בתוכנית ההעשרה שלנו, אנחנו פותחים בפני נערות ונערים דלת לעולמות מתמטיים מרתקים (כמו תורת הגרפים, טבעת מביוס ועוד) ועוזרים להם להכיר ולהתאהב בתחומי המתמטיקה המגוונים. 
+                         <strong class="block mt-2">אנחנו מחפשים רכז/ת פדגוגי/ת עם לב פתוח ותשוקה אמיתית, שיצטרף/תצטרף לצוות שלנו.</strong>
+                     </p>
+                </div>
+                
+                <button onclick="scrollToDetails()" class="animate-on-scroll fade-in pulse-button bg-orange-500 hover:bg-orange-600 text-white text-lg md:text-xl font-bold py-3 px-8 md:py-4 md:px-12 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105" style="transition-delay: 450ms;">
+                    גלה/י עוד על התפקיד ⬇
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorative Separator -->
+    <div class="relative py-12 md:py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-full max-w-xs md:max-w-md mx-auto px-4">
+                <div class="flex items-center">
+                    <div class="flex-1 h-px bg-gradient-to-r from-transparent via-purple-300 to-purple-500"></div>
+                    <div class="mx-3 md:mx-6 bg-white rounded-full p-3 md:p-4 shadow-lg">
+                        <div class="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-r from-purple-500 to-orange-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-lg md:text-2xl">📋</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 h-px bg-gradient-to-l from-transparent via-purple-300 to-purple-500"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Role Details Section -->
+    <section id="details" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="animate-on-scroll fade-in text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16">מהות התפקיד</h2>
+                
+                <div class="animate-on-scroll fade-in bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl md:rounded-3xl p-6 md:p-10 mb-8 md:mb-12 text-white">
+                    <p class="text-lg md:text-xl leading-relaxed text-center">
+                        זו לא עוד עבודת ריכוז סטנדרטית. התפקיד דינאמי ומשלב בין אנשים, יצירתיות פדגוגית ויוזמה. את/ה תצטרף/י לצוות הקיים של ריכוז תוכנית העשרה, בו המשימות מתחלקות בינינו לפי החוזקות והעניין של כל אחת ואחד.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
+                    <div class="animate-on-scroll slide-in-right card-hover bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+                        <h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-4 md:mb-6">היום-יום שלך יכלול:</h3>
+                        <ul class="space-y-3 md:space-y-4 text-gray-700 text-sm md:text-base">
+                            <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🔗</span>
+                                <span>להיות הגורם המקשר והכתובת המרכזית של המורות והמורים מול הארגון</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">👥</span>
+                                <span>ליווי והנחיה פדגוגית של המורות והמורים</span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🤖</span>
+                                <span>שילוב כלים טכנולוגיים חדשניים (כן, גם AI!) בהוראה</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🚗</span>
+                                <span>ביקורים בקבוצות הלימוד ברחבי הארץ (פעם-פעמיים בשבוע)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">📚</span>
+                                <span>פיתוח ושדרוג חומרי הוראה מגוונים</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">💡</span>
+                                <span>לחלום, לתכנן ולהוציא לפועל יוזמות חדשות</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="animate-on-scroll slide-in-left card-hover bg-white rounded-2xl p-6 md:p-8 shadow-lg" style="transition-delay: 150ms;">
+                        <h3 class="text-xl md:text-2xl font-bold text-green-600 mb-4 md:mb-6">את מי אנחנו מחפשים?</h3>
+                        <ul class="space-y-3 md:space-y-4 text-gray-700 text-sm md:text-base">
+                            <li class="flex items-start">
+                                <span class="text-green-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🤝</span>
+                                <span><strong>יחסי אנוש מעולים:</strong> יודע/ת להקשיב, לשאול ולראות את האדם שמולך</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🧮</span>
+                                <span><strong>חשיבה מתמטית וסקרנות:</strong> נהנה/ית מהתחום, אוהב/ת לפתור בעיות</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">✨</span>
+                                <span><strong>מתרגש/ת מהוראה:</strong> אין דבר שמשמח אותך יותר מלראות את האור נדלק בעיניים</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">📚</span>
+                                <span><strong>רצון עז ללמוד:</strong> רואה בכל משימה הזדמנות לצמוח</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-3 mt-1 flex-shrink-0">🚀</span>
+                                <span><strong>טיפוס יוזם:</strong> אוהב/ת לקחת רעיון ולהפוך אותו לפרויקט חי</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll fade-in bg-blue-50 rounded-2xl md:rounded-3xl p-6 md:p-10 mb-8 md:mb-12">
+                    <p class="text-base md:text-lg text-gray-700 text-center leading-relaxed">
+                        <strong class="text-blue-700">חשוב לנו להדגיש:</strong> אנחנו מאמינים בלמידה מתמדת. הכניסה לתפקיד מלווה בחפיפה צמודה ותומכת עד שתרגיש/י בנוח, והעבודה ממשיכה להתבצע בשיתוף פעולה ובהתייעצות.
+                    </p>
+                    <p class="text-base md:text-lg text-gray-700 text-center leading-relaxed mt-4">
+                        ידע אקדמי במתמטיקה או במדעים וניסיון בהדרכה/הוראה הם יתרון, אבל התשוקה והפוטנציאל חשובים לנו לא פחות!
+                    </p>
+                </div>
+
+                <div class="mb-8 md:mb-12">
+                    <h3 class="animate-on-scroll fade-in text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6 md:mb-8">מה אנחנו מציעים?</h3>
+                    
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" data-stagger-container>
+                        <div class="animate-on-scroll fade-in bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center">
+                            <div class="text-3xl md:text-4xl mb-3 md:mb-4">🎯</div>
+                            <h4 class="text-lg md:text-xl font-bold text-purple-600 mb-2 md:mb-3">השפעה אמיתית</h4>
+                            <p class="text-gray-700 text-sm md:text-base">הזדמנות אמיתית להשפיע ולעצב את חוויית הלמידה של מאות בני נוער</p>
+                        </div>
+                        
+                        <div class="animate-on-scroll fade-in bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center">
+                            <div class="text-3xl md:text-4xl mb-3 md:mb-4">🤝</div>
+                            <h4 class="text-lg md:text-xl font-bold text-green-600 mb-2 md:mb-3">סביבת עבודה מעולה</h4>
+                            <p class="text-gray-700 text-sm md:text-base">סביבת עבודה שיתופית, תומכת ומפרגנת (אנחנו צוות של ארבע רכזות!)</p>
+                        </div>
+                        
+                        <div class="animate-on-scroll fade-in bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center">
+                            <div class="text-3xl md:text-4xl mb-3 md:mb-4">🔄</div>
+                            <h4 class="text-lg md:text-xl font-bold text-blue-600 mb-2 md:mb-3">גמישות והתאמה</h4>
+                            <p class="text-gray-700 text-sm md:text-base">גמישות והתאמה של משימות לחוזקות ולתחומי העניין שלך</p>
+                        </div>
+                        
+                        <div class="animate-on-scroll fade-in bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center">
+                            <div class="text-3xl md:text-4xl mb-3 md:mb-4">📈</div>
+                            <h4 class="text-lg md:text-xl font-bold text-orange-600 mb-2 md:mb-3">צמיחה מקצועית</h4>
+                            <p class="text-gray-700 text-sm md:text-base">מקום שרואה בך השקעה ומעודד צמיחה והתפתחות מקצועית</p>
+                        </div>
+                        
+                        <div class="animate-on-scroll fade-in bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center sm:col-span-2 lg:col-span-2">
+                            <div class="text-3xl md:text-4xl mb-3 md:mb-4">⭐</div>
+                            <h4 class="text-lg md:text-xl font-bold text-pink-600 mb-2 md:mb-3">תנאים מצוינים</h4>
+                            <div class="text-gray-700 text-sm md:text-base space-y-1 md:space-y-2">
+                                <p>💰 שכר גבוה ותנאים מצוינים</p>
+                                <p>🎁 מתנות בחגים וסיבוס</p>
+                                <p>⏰ משרה מלאה עם גמישות</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll fade-in bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl md:rounded-3xl p-6 md:p-10 text-white text-center mb-8 md:mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">נשמע לך מרתק?</h3>
+                    <p class="text-base md:text-xl leading-relaxed mb-6 md:mb-8">
+                        אנחנו מאמינים בצמיחה משותפת. גם אם אין לך ניסיון בכל התחומים שצוינו, אבל יש לך את התשוקה למתמטיקה ואת הרצון ללמוד ולהשפיע - נשמח מאוד לקבל את קורות החיים שלך ולבדוק יחד את ההתאמה.
+                    </p>
+                </div>
+
+                <div class="animate-on-scroll fade-in bg-gradient-to-r from-orange-400 to-pink-500 rounded-2xl md:rounded-3xl p-6 md:p-10 text-white text-center">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">איך להגיש מועמדות?</h3>
+                    <p class="text-lg md:text-xl mb-6 md:mb-8">שלח/י קורות חיים למייל:</p>
+                    
+                    <div class="bg-white bg-opacity-20 rounded-2xl p-4 md:p-6 mb-6 md:mb-8">
+                        <a href="mailto:pedagogy@yuni.co.il" class="text-lg md:text-2xl font-bold text-white hover:text-yellow-200 transition-colors break-all">
+                            pedagogy@yuni.co.il
+                        </a>
+                    </div>
+                    
+                    <div class="mt-4 md:mt-6">
+                        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-white hover:text-yellow-200 transition-colors font-medium">
+                            ⬆ חזור למעלה
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Simplified & Robust Animation on Scroll ---
+
+            const observerOptions = {
+                threshold: 0.1, 
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const target = entry.target;
+                    
+                    // Stagger children if the container is in view
+                    if (target.dataset.staggerContainer !== undefined) {
+                        const children = target.querySelectorAll('.animate-on-scroll');
+                        if (entry.isIntersecting) {
+                            children.forEach((child, index) => {
+                                // Apply delay and make visible
+                                child.style.transitionDelay = `${index * 120}ms`;
+                                child.classList.add('visible');
+                            });
+                        } else {
+                            // Reset children when container is out of view
+                            children.forEach(child => {
+                                child.classList.remove('visible');
+                                child.style.transitionDelay = '0ms';
+                            });
+                        }
+                    } 
+                    // Handle single elements
+                    else {
+                        if (entry.isIntersecting) {
+                            target.classList.add('visible');
+                        } else {
+                            target.classList.remove('visible');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Observe single elements that are NOT children of a stagger container
+            const singleAnimatedElements = document.querySelectorAll('.animate-on-scroll:not([data-stagger-container] .animate-on-scroll)');
+            singleAnimatedElements.forEach(el => observer.observe(el));
+
+            // Observe stagger containers
+            const staggerContainers = document.querySelectorAll('[data-stagger-container]');
+            staggerContainers.forEach(container => observer.observe(container));
+
+            // --- Scroll to details function ---
+            window.scrollToDetails = function() {
+                const isMobile = window.innerWidth <= 768;
+                
+                if (isMobile) {
+                    document.getElementById('details').scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    const separator = document.querySelector('.relative.py-12');
+                    separator.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    setTimeout(() => {
+                        document.getElementById('details').scrollIntoView({ behavior: 'smooth' });
+                    }, 1200);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
